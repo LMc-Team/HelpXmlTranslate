@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HelpXmlTranslate</string>
+    <string name="dialog_choose_dialog_title">选择XML</string>
+    <string name="dialog_choose_msg">请输入XML路径或者长按来选择</string>
+    <string name="dialog_choose_ok">确定</string>
+    <string name="dialog_choose_error" >输入正确的文件路径！（文件要存在！）</string>
+    <string name="save_as_xml">保存为 XML...</string>
+    <string name="save_as_json">保存为 JSON...</string>
+    <string name="menu_reopen">重新打开</string>
+</resources>

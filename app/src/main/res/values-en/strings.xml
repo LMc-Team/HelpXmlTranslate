@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HelpXmlTranslate</string>
+    <string name="dialog_choose_dialog_title">Choose XML file</string>
+    <string name="dialog_choose_msg">Enter XML file path(Long press to show file picker)</string>
+    <string name="dialog_choose_ok">ok</string>
+    <string name="dialog_choose_error" >Please enter the correct file path.The file must exist.</string>
+    <string name="save_as_xml">Save as XML...</string>
+    <string name="save_as_json">Save as JSON...</string>
+    <string name="menu_reopen">Reopen a file</string>
+</resources>

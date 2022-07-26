@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_save_as_xml"
+        android:title="@string/save_as_xml" />
+    <item
+        android:id="@+id/menu_save_as_json"
+        android:title="@string/save_as_json" />
+    <item
+        android:id="@+id/reopen"
+        android:title="@string/menu_reopen" />
+</menu>
