@@ -9,4 +9,7 @@
     <item
         android:id="@+id/reopen"
         android:title="@string/menu_reopen" />
+    <item
+        android:id="@+id/reload"
+        android:title="@string/menu_reload" />
 </menu>
