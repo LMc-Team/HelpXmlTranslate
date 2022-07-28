@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.SimpleItemAnimator;
 
 import android.annotation.SuppressLint;
 import android.content.ClipData;
@@ -52,11 +53,18 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         adapter = new XmlTranslateAdapter();
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        layoutManager.setInitialPrefetchItemCount(10);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
         recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setItemViewCacheSize(200000);
-        recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
+        recyclerView.getItemAnimator().setAddDuration(0L);
+        recyclerView.getItemAnimator().setRemoveDuration(0L);
+        recyclerView.getItemAnimator().setMoveDuration(0L);
+        recyclerView.getItemAnimator().setChangeDuration(0L);
+        ((SimpleItemAnimator)recyclerView.getItemAnimator()).setSupportsChangeAnimations(false);
+
+//        recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
         showChooseXmlDialog(false);
     }
 
